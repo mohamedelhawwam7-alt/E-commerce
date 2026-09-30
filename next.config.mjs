@@ -1,23 +1,12 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
+  output: "export",
+
+  basePath: isProd ? "/E-commerce" : "",
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "ecommerce.routemisr.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "freshcart-next.vercel.app",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        pathname: "/**",
-      },
-    ],
+    unoptimized: true,
   },
 };
 
