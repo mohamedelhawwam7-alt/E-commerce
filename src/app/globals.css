@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+
+
+.active{
+  color: rgb(250, 4, 4);
+  border-bottom: rgb(241, 86, 66) 2px solid;
+}
+.swiper-pagination {
+  bottom: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  opacity: 0.5 !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  width: 28px !important; 
+  border-radius: 9999px !important;
+}
