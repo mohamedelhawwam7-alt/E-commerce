@@ -183,7 +183,9 @@ export default function ProductDetailsPage() {
               >
                 <Heart
                   size={24}
-                  className={liked ? "fill-rose-500 text-rose-500" : "text-gray-400"}
+                  className={
+                    liked ? "fill-rose-500 text-rose-500" : "text-gray-400"
+                  }
                 />
               </button>
             </div>
