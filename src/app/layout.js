@@ -6,6 +6,8 @@ import { AuthProvider } from "../context/AuthContext";
 import { ToastProvider } from "../context/ToastContext";
 import Footer from "./_component/footer/Footer";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "FreshCart",
   description: "Ecomerce",
