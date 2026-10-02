@@ -1,7 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ecommerce.routemisr.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "freshcart-next.vercel.app",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
